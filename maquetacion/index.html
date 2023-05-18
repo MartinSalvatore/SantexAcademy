@@ -13,44 +13,100 @@
             margin-right: 40px;
         }
         h1 {
-            margin: 0px 400px;
+            margin: 0 auto;
             text-align: center;
         }
         button.redondo {
             background-color: white;
             border: 1px solid black;
             border-radius: 25px;
-            padding: 0px 20px;
+            padding: 0 20px;
             height: 32px;
         }
         div#introduction-actions {
             display: flex;
             justify-content: center;
         }
+        /* Navbar styles */
+        div.navbar {
+            display: flex;
+            border-bottom: 1px solid gray;
+            padding: 12px 100px;
+            justify-content: space-between;
+        }
+        div#navbar-left img {
+            width: 100%;
+        }
+        div.navbar-right {
+            display: flex;
+            align-items: center;
+        }
+        /* Introduction container styles */
+        div.introduction-container {
+            padding: 33.6px;
+            margin: 0;
+            font-size: 1em;
+            --fontSize: 28;
+            line-height: 1.2;
+            width: 576.1px;
+            height: 100.8px;
+            margin-bottom: 15px;
+            border-right-style: solid;
+            border-right-width: 0;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 120px;
+        }
+        div.introduction-container h2 {
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+        div.introduction-container button {
+            margin-left: 100px;
+        }
+        div.introduction-container button.redondo {
+            color: blue;
+            border-color: blue;
+        }
+        /* Conteo styles */
+        div.conteo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1.conteo-heading {
+            color: aliceblue;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+        h2.conteo-text {
+            color: aliceblue;
+            text-align: start;
+            width: 27em;
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1.5em;
+        }
+        p.footer_text {
+            color: aliceblue;
+        }
+        p.footer_text--light {
+            color: aliceblue;
+        }
+        /* Foto equipo styles */
+        div.foto_equipo img {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
         <div id="header-left">
-            <img src="logo.svg">
+            <img src="logo.svg" alt="Logo">
         </div>
         <div id="header-right" style="display: flex; align-items: center;">
             <p>Nosotros</p>
             <p>Programas</p>
-            <p>Capaciontaciones</p>
+            <p>Capacitaciones</p>
             <p>Alianzas</p>
             <p>Contacto</p>
-            <button class="redondo">Sumate +</button>
-        </div>
-    </div>
-    <div id="introduction" style="padding: 48px;">
-        <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
-        </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
-        </div>
-    </div>
-</body>
-</html>
